@@ -1,6 +1,5 @@
 
 import axios from "axios";
-import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 export const nextauthOption : any ={
     
@@ -23,20 +22,17 @@ export const nextauthOption : any ={
                   password: credentials.password,
                 });
                 
-                console.log("res ",response);
                 if (response.status === 200) {
                   const user = {
                     email: credentials.email,
                     accessToken: response.data.accessToken,
                   };
-                  console.log("user ",user);
                   return user;
                 } else {
 
                   return null;
                 }
               } catch (err:any) {
-                console.log("err response",err.response);
               }
             },
         

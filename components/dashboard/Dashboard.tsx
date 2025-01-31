@@ -1,6 +1,6 @@
 "use client"
 
-import { BadgePercent, Car, CarFrontIcon, DollarSign, Phone, ShoppingBasket, User } from 'lucide-react'
+import { BadgePercent, DollarSign,  ShoppingBasket, User } from 'lucide-react'
 import React from 'react'
 
 import { LabelList, Pie, PieChart } from "recharts"

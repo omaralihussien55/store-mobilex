@@ -9,18 +9,15 @@ import {
 } from "@/components/ui/collapsible"
 import {
   SidebarGroup,
-  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarMenuSub,
-  SidebarMenuSubButton,
-  SidebarMenuSubItem,
 } from "@/components/ui/sidebar"
 import { RadioGroup, RadioGroupItem } from "./ui/radio-group"
 import { Label } from "./ui/label"
 import { useAppDispatch } from "@/redux/hooks"
-import { HandleAddToFavorite, HandleChangeCategory, HandleFavorit } from "@/redux/ProductSlice"
+import { HandleChangeCategory } from "@/redux/ProductSlice"
 import { useRouter } from "next/navigation"
 
 export function NavMain({

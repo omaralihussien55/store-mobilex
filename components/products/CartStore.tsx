@@ -4,6 +4,7 @@ import { ShoppingCart } from 'lucide-react'
 import React, { useState } from 'react'
 import { Button } from '../ui/button'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 const CartStore = () => {
 const {products} = useAppSelector(state=> state.products)
@@ -25,7 +26,7 @@ const Dispatch =useAppDispatch()
             <div key={idx}  className='flex justify-between  mb-2 border p-1'>
                 <div className='flex  gap-4'>
                 <div className='size-10 rounded-full overflow-hidden'>
-                  <img src={item.img} className='w-full h-full object-contain' alt=''/>
+                  <Image src={item.img} className='w-full h-full object-contain' alt=''/>
               </div>
 
                 <div>

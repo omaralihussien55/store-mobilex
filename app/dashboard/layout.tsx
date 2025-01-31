@@ -1,19 +1,12 @@
 "use client"
 import { AppSidebar } from "@/components/app-sidebar";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { ProjectMobile } from "@/db";
-import { cookie } from "@/lib/Cookies";
-import type { Metadata } from "next";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import ProviderComponent from "../_lib/providers/ProviderComponent";
-import { ShoppingCart } from "lucide-react";
 import CartStore from "@/components/products/CartStore";
-import { useAppSelector } from "@/redux/hooks";
 
 
 

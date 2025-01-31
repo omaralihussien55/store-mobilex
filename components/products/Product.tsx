@@ -1,11 +1,7 @@
 "use client"
 import { useAppDispatch, useAppSelector } from '@/redux/hooks'
-import { HandleAddCart, HandleFavorit, HandleProducts } from '@/redux/ProductSlice'
-import React, { useEffect, useState } from 'react'
-import { Card, CardContent, CardHeader } from '../ui/card'
-import Image from 'next/image'
-import { Button } from '../ui/button'
-import { Heart} from 'lucide-react'
+import {  HandleProducts } from '@/redux/ProductSlice'
+import React, { useEffect } from 'react'
 import CardItem from '../CardItem'
 import { Alert, AlertDescription, AlertTitle } from '../ui/alert'
 import SearchProduct from '../search/SearchProduct'

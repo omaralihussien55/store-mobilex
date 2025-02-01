@@ -61,7 +61,7 @@ export function NavMain({
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <SidebarMenuSub>
-                <RadioGroup onValueChange={(e:any)=> Dispatch(HandleChangeCategory(e))} className="accent-purple-500" defaultValue="all category">
+                <RadioGroup onValueChange={(e)=> Dispatch(HandleChangeCategory(e))} className="accent-purple-500" defaultValue="all category">
                   {(item.items&&item.items?.length >= 1 )? item.items?.map((subItem,idx) => (
                      <div key={idx} className="flex items-center space-x-2">
                        <RadioGroupItem  value={subItem.title} id={`r${idx}`} />

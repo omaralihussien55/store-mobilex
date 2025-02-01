@@ -4,6 +4,7 @@ import { HandleAddCart, HandleAmount, HandleGetItemDetails } from '@/redux/Produ
 import React, { FC, useEffect } from 'react'
 import { Separator } from '../ui/separator'
 import { Button } from '../ui/button'
+import Image from 'next/image'
 
 const ProductDetails:FC<{id:string | number}> = ({id}) => {
 const {itemDetails} = useAppSelector(state => state.products)
@@ -15,7 +16,7 @@ useEffect(()=>{
    <>
     <div className='flex items-stretch  h-[350px] flex-wrap border rounded-lg w-[70%] mx-auto '>
       <div className='w-full sm:w-1/3 h-full'>
-       <img src={itemDetails?.img} className='w-full h-full' />
+       <Image  src={itemDetails?.img} className='w-full h-full' alt='' />
       </div>
       <div className='w-full sm:w-2/3 rounded-lg h-full p-4'>
         <div className='flex flex-col justify-between items-stretch h-full'>

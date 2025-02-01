@@ -6,10 +6,11 @@ import Image from 'next/image'
 import { useAppDispatch } from '@/redux/hooks'
 import { HandleAddCart, HandleFavorit } from '@/redux/ProductSlice'
 import { useRouter } from 'next/navigation'
+import { CardProps } from '@/db'
 
 
 interface CardItemProps {
-    item:any
+    item:CardProps
 }
 const CardItem:FC<CardItemProps> = ({item}) => {
 

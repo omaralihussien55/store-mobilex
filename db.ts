@@ -30,3 +30,8 @@ export const ProjectMobile=[
 
 export const cart = []
 export const favorit=[]
+
+
+export interface CardProps {id:number,name: string, disc:string,
+         img:string, price: number, category:string, model: number, amount: number,
+          total: number, storage:string, ram:string, camera: string, processor: string,fav:boolean,inCart:boolean}

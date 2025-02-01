@@ -11,6 +11,7 @@ import {
     TableRow,
   } from "@/components/ui/table"
 import { useAppSelector } from '@/redux/hooks'
+import { CardProps } from '@/db'
 
 
 const Sales = () => {
@@ -25,7 +26,7 @@ const Sales = () => {
 
 export default Sales
 
-const  TableDemo:FC<{sales:Array<any>}> = ({sales})=> {
+const  TableDemo:FC<{sales:Array<CardProps>}> = ({sales})=> {
     return (
 
       <Table className="shadow border">

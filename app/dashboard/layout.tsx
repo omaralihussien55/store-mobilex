@@ -3,7 +3,6 @@ import { AppSidebar } from "@/components/app-sidebar";
 import { Separator } from "@/components/ui/separator";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { ProjectMobile } from "@/db";
-import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import ProviderComponent from "../_lib/providers/ProviderComponent";
 import CartStore from "@/components/products/CartStore";
@@ -20,7 +19,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const router = useRouter()
 
   useEffect(()=>{
 localStorage.setItem("projects",JSON.stringify(ProjectMobile))

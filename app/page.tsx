@@ -1,10 +1,7 @@
 "use client"
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
 
 export default function Home() {
-const router = useRouter()
-
   return (
     <div className="flex justify-center items-center p-3 h-full">
          <div className="w-1/3 mx-auto  mt-5">

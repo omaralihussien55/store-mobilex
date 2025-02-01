@@ -2,25 +2,25 @@ import axios from "axios";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { NextAuthOptions } from "next-auth";
 
-interface Credentials {
-  email: string;
-  password: string;
-}
+// interface Credentials {
+//   email: string;
+//   password: string;
+// }
 
-interface User {
-  email: string;
-  accessToken: string;
-}
+// interface User {
+//   email: string;
+//   accessToken: string;
+// }
 
-interface JWT {
-  accessToken?: string;
-  [key: string]: any; // لحفظ أي خصائص إضافية قد تُضاف إلى الـ token
-}
+// interface JWT {
+//   accessToken?: string;
+//   [key: string]: any; // لحفظ أي خصائص إضافية قد تُضاف إلى الـ token
+// }
 
-interface Session {
-  accessToken?: string;
-  [key: string]: any; // لحفظ أي خصائص إضافية قد تُضاف إلى الـ session
-}
+// interface Session {
+//   accessToken?: string;
+//   [key: string]: any; // لحفظ أي خصائص إضافية قد تُضاف إلى الـ session
+// }
 
 export const nextauthOption: NextAuthOptions = {
   // session: {

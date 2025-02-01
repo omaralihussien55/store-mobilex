@@ -23,7 +23,7 @@ const [password,setPassword] = useState("1234")
 const [error,setError] = useState("")
 const [sniper,setSniper] = useState(false)
 const router = useRouter()
-  const handleSubmit  = (e:Event)=>{
+  const handleSubmit  = (e)=>{
      e.preventDefault()
       if(email && password){
            if(email === "omar@gmail.com" && password==="1234"){
